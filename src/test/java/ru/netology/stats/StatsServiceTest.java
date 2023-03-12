@@ -1,13 +1,12 @@
 package ru.netology.stats;
 
-import org.example.Main;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class StatsServiceTest {
     @Test
     public void ShouldFindTheSumOfTheArray() {
-        Main.StatsService service = new Main.StatsService();
+        StatsService service = new StatsService();
 
         int[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedSumaArray = 180;
@@ -19,7 +18,7 @@ public class StatsServiceTest {
 
     @Test
     public void ShouldFindAverageSalesPerMonth() {
-        Main.StatsService service = new Main.StatsService();
+        StatsService service = new StatsService();
 
         int[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedAveragеSalesAmount = 15;
@@ -30,7 +29,7 @@ public class StatsServiceTest {
 
     @Test
     public void ShouldFindSalesForTheMaximumAmount() {
-        Main.StatsService service = new Main.StatsService();
+        StatsService service = new StatsService();
 
         int[] array = {8, 15, 13, 15, 17, 20, 19,20, 7, 14, 14, 18};
         int expectedSalesForTheMaximumAmount = 8;
@@ -41,7 +40,7 @@ public class StatsServiceTest {
 
     @Test
     public void ShouldFindSalesForTheMinAmount() {
-        Main.StatsService service = new Main.StatsService();
+        StatsService service = new StatsService();
 
         int[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedSalesForTheMinAmount = 9;
@@ -52,7 +51,7 @@ public class StatsServiceTest {
 
     @Test
     public void ShouldFindLessThanAverageSalesMonths() {
-        Main.StatsService service = new Main.StatsService();
+        StatsService service = new StatsService();
 
         int[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedLessThanAverageSalesMonths = 5;
@@ -63,7 +62,7 @@ public class StatsServiceTest {
 
     @Test
     public void ShouldFindMonthsOfSalesAboveAverage() {
-        Main.StatsService service = new Main.StatsService();
+        StatsService service = new StatsService();
 
         int[] array = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedFindMonthsOfSalesAboveAverage = 5;

@@ -1,11 +1,6 @@
-package org.example;
+package ru.netology.stats;
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
-
-    public static class StatsService {
+    public class StatsService {
         public int Sumarray(int[] array) {
             int sumarray = 0;
 
@@ -94,4 +89,7 @@ public class Main {
             return count;
         }
     }
-}
+
+
+
+
