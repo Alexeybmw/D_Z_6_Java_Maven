@@ -50,14 +50,9 @@ public class StatsService {
 
     public int lessThanAverageSalesMonths(int[] array) {
 
-        int averagе = 0;
         int count = 0;
-        int averageamount = 0;
+        int averageamount = averagеSalesAmount(array);
 
-        for (int i = 0; i < array.length; i++) {
-            averagе = averagе + array[i];
-            averageamount = averagе / array.length;
-        }
         for (int i = 0; i < array.length; i++) {
             if (averageamount > array[i]) {
                 count++;
@@ -69,20 +64,14 @@ public class StatsService {
 
     public int findMonthsOfSalesAboveAverage(int[] array) {
 
-        int averagе = 0;
         int count = 0;
-        int averageamount = 0;
+        int averageamount = averagеSalesAmount(array);
 
-        for (int i = 0; i < array.length; i++) {
-            averagе = averagе + array[i];
-            averageamount = averagе / array.length;
-        }
         for (int i = 0; i < array.length; i++) {
             if (averageamount < array[i]) {
                 count++;
             }
         }
-
 
         return count;
     }
